@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Login Auth-fimo</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <link rel="stylesheet" href="login.css">
+    <script src="jquery.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <!--<h2 class="text-center">Chào mừng tới hệ thống đăng nhập</h2>-->
+            <div class="flip">
+                <div class="card">
+                    <div class="face front">
+                        <div class="panel panel-default">
+                            <form class="form-horizontal validatedForm" action="#">
+                                <br>
+                                <h1 class="text-center">
+                                    <img src="logo.png" alt="">
+                                    Login
+                                </h1>
+                                <br>
+                                <input class="form-control" placeholder="Email" name="email" type="email"/>
+                                <input class="form-control" placeholder="Password" name="password" type="password"/>
+                                <p class="text-right"><a href="">Forgot Password</a></p>
+                                <a class="btn btn-primary btn-block" href="../admin/index.html">LOG IN</a>
+                                <hr>
+                                <p class="text-center">
+                                    <a href="#" class="fliper-btn">Create new account?</a>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="face back">
+                        <div class="panel panel-default">
+                            <form class="form-horizontal" id="validatedForm">
+                                <br>
+                                <h1 class="text-center">
+                                    <img src="logo.png" alt="">
+                                    Signup
+                                </h1>
+                                <br>
+                                <label>Basic Information</label>
+                                <input class="form-control" placeholder="Fullname" name="name" type="text"/>
+                                <input class="form-control" placeholder="Email" name="email"/>
+                                <label>Private Information</label>
+                                <input class="form-control" id="password" placeholder="Password" name="password" type="password"/>
+                                <input class="form-control" id="password_confirm" placeholder="Confirm Password" name="password_confirm" type="password"/>
+                                <label>Birth Day</label>
+                                <input class="form-control" type="date" name="date">
+                                <label>Phone Number</label>
+                                <input class="form-control" placeholder="Mobile Number" name="phone"type="number"/>
+                                <button class="btn btn-primary btn-block">SIGN UP</button>
+                                <br>
+                                <p class="text-center">
+                                    <a href="#" class="fliper-btn createUserModal">Already have an account?</a>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+</div><!-- /.container -->
+<script src="login.js" type="text/javascript"></script>
+</body>
+</html>
